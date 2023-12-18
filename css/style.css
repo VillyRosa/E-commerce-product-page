@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 40px 8%;
+}
+
+nav {
+    height: 90px;
+    border-bottom: 1px solid hsl(223, 64%, 98%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+nav .links ul {
+    gap: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .links ul li {
+    list-style: none;
+}
+
+nav .links ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: hsl(219, 9%, 45%);
+}
+
+nav .links ul li a h3 {
+    text-decoration: none;
+    font-size: 35px;
+    color: hsl(220, 13%, 13%);
+}
+
+nav .links ul li:nth-child(2) {
+    margin-left: 40px;
+}
+
+nav .utilities {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav .utilities img {
+    cursor: pointer;
+}
+
+nav .utilities #perfil {
+    width: 50px;
+}
+
+main {
+    padding: 40px 20%;
+
+    gap: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .images .image-display {
+    width: 100%;
+    border-radius: 16px;
+}
+
+main .images .thumb-images {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+}
+
+main .images .thumb-images img {
+    width: 100px;
+    border-radius: 16px;
+    margin-top: 25px;
+    transition: filter 0.5s ease-in-out;
+}
+
+main .images .thumb-images img.sel {
+    border: 3px solid hsl(26, 100%, 55%);
+}
+
+main .infos .brand {
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+main .infos .title {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+main .infos .description {
+    color: hsl(219, 9%, 45%);
+    line-height: 1.6rem;
+}
+
+main .infos .values {
+    width: 200px;
+    margin: 20px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+main .infos .values .price {
+    color: hsl(0, 0%, 0%);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+main .infos .values .discount {
+    background-color: hsl(25, 100%, 94%);
+    border-radius: 8px;
+    padding: 2px 8px;
+    margin-left: 8px;
+    
+    color: hsl(26, 100%, 55%);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+main .infos .values .original-price {
+    color: hsl(220, 14%, 75%);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: line-through;
+    display: block;
+}
+
+main .infos .actions {
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+
+    gap: 15px;
+    display: flex;
+}
+
+main .infos .actions .quantity {
+    width: 40%;
+    
+    padding: 0 16px;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 6px;
+
+    font-weight: 700;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .infos .actions .quantity img {
+    cursor: pointer;
+}
+
+main .infos .actions button {
+    width: 60%;
+    border: none;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 6px;
+    transition: all 1s ease;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .infos .actions button:hover {
+    background-color: hsla(26, 100%, 55%, 0.669);
+}
+
+main .infos .actions button svg {
+    height: 200px;
+    fill: #fff;
+}
+
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.534);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow .imagePreview {
+    height: 60%;
+    border-radius: 16px;
+}
+
+.shadow svg {
+    z-index: 1;
+    margin-left: 560px;
+    margin-bottom: 20px;
+    fill: #fff;
+    font-size: 300px;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.shadow svg:hover {
+    fill: hsl(26, 100%, 55%);
+}
+
+.hidden {
+    display: none;
+}

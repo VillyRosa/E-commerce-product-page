@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="shadow hidden">
+    <svg id="closePreview" width="20" height="15" xmlns="http://www.w3.org/2000/svg">
+      <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill-rule="evenodd"/>
+    </svg>
+    <img class="imagePreview" src="./images/image-product-1.jpg" alt="image-display">
+  </div>
+
+  <header>
+    <nav>
+      <div class="links">
+        <ul>
+          <li><a href="#"><h3 class="title">sneakers</h3></a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="utilities">
+        <img id="cart" src="./images/icon-cart.svg" alt="cart-icon">
+        <div class="cart">
+          
+        </div>
+        <img id="perfil" src="./images/image-avatar.png" alt="profile-icon">
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="images">
+      <img class="image-display" src="./images/image-product-1.jpg" alt="image-display">
+      <div class="thumb-images">
+        <img class="thumb-image sel" src="./images/image-product-1-thumbnail.jpg" alt="1">
+        <img class="thumb-image" src="./images/image-product-2-thumbnail.jpg" alt="2">
+        <img class="thumb-image" src="./images/image-product-3-thumbnail.jpg" alt="3">
+        <img class="thumb-image" src="./images/image-product-4-thumbnail.jpg" alt="4">
+      </div>
+    </div>
+
+    <div class="infos">
+
+      <p class="brand">sneaker company</p>
+      <h1 class="title">Fall Limited Edition Sneakers</h1>
+      <p class="description">These low-profile sneakers are you perfect casual wear companion. Featuring a durable rubber outer sole, they'II withstand everything the weather can offer.</p>
+      
+      <div class="values">
+        <p class="price">$125.00</p>
+        <p class="discount">50%</p>
+        <p class="original-price">$250.00</p>
+      </div>
+
+      <div class="actions">
+        <div class="quantity">
+          <img src="./images/icon-minus.svg" alt="minus-icon" onclick="toggleAmount(false)">
+          <p id="amount">0</p>
+          <img src="./images/icon-plus.svg" alt="plus-icon" onclick="toggleAmount(true)">
+        </div>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 22 20">
+            <path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"/>
+          </svg>          
+          Add to cart
+        </button>
+      </div>
+      
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">VillyRosa</a>.
+  </div> -->
+</body>
+</html>
